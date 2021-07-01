@@ -20,4 +20,4 @@ notifications:
 addons:
   sonarcloud: 
     organization: 'sebaarodas'
-    travis_token: $sonar-scanner
+    travis_token: sonar-scanner
