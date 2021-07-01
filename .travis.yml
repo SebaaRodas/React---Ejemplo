@@ -7,7 +7,7 @@ cache:
 script:
   - npm run build
   - npm test
-  - sonarcloud-token
+  - sonar-scanner
 deploy:
   provider: pages
   skip_cleanup: true
