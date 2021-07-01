@@ -17,7 +17,10 @@ deploy:
     branch: master
 notifications:
   slack: ingdesoftwarecorp:M517YaZr1TFeoN16omBIw6mB
-addons:
-  sonarcloud: 
-    organization: 'sebaarodas'
-    travis_token: sonar-scanner
+ addons:
+  sonarcloud:
+    organization: "sebaarodas"
+    token:
+      secure: ${sonar-scanner}
+    branches:
+      - master
