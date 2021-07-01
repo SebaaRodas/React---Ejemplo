@@ -7,6 +7,7 @@ cache:
 script:
   - npm run build
   - npm test
+  - sonar-scanner
 deploy:
   provider: pages
   skip_cleanup: true
@@ -16,4 +17,7 @@ deploy:
     branch: master
 notifications:
   slack: ingdesoftwarecorp:M517YaZr1TFeoN16omBIw6mB
-
+addons:
+  sonarcloud: 
+    organization: 'sebaarodas'
+    travis_token: $sonar-scanner
